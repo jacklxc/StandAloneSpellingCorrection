@@ -1,0 +1,69 @@
+{   
+    "model_name": "standard", 
+    "best_checkpoint": "new_checkpoints/standard_best",
+    "periodic_checkpoint": "new_checkpoints/standard_period",
+
+    "batch_size": 128, 
+    "warmup_steps": 1,
+    "learning_rate": 1e-3,
+
+    "beta1": 0.9,
+    "beta2": 0.98, 
+    "eps": 1e-9,
+
+    "label_smooth_eps": 0.1,
+
+    "n_split": 5,
+    "limit": 3e5,
+
+    "model_type": "standard",
+    "oov": false,
+
+    "src_vocab_size": 30003, 
+    "bpe_vocab_size": 5003,
+    "char_vocab_size": 106,
+    "trg_vocab_size": 30003,
+    "unk_idx": 30001,
+    "oov_idx": 30002,
+
+    "src_pad_idx": 0,
+
+    "trg_pad_idx": 1,
+
+    "word_max_length": 20,
+    "sentence_max_length": 200,
+
+    "d_model": 512,
+    "d_char_model": 256,
+    "d_inner_hid": 1024,
+    "d_char_inner_hid": 512,
+    "d_key": 64,
+    "d_value": 64,
+    "n_head": 8,
+    "n_layer": 6,
+    "n_char_layer": 4,
+    "prepostprocess_dropout": 0.1,
+    "attention_dropout": 0.1,
+    "relu_dropout": 0.1,
+    "preprocess_cmd": "n",
+    "postprocess_cmd": "da",  
+    "dropout_seed": null,
+    "weight_sharing": false,
+
+    "prefix": "new_data/",
+    "train_input_path": "debug.txt",
+    "train_label_path": "debug_label.jsonl",
+    "dev_input_path": "debug.txt",
+    "dev_label_path": "debug_label.jsonl",
+    "test_input_path": "debug.txt",
+    "test_label_path": "debug_label.jsonl",
+    "dev_detection_path": null,
+    "test_detection_path": null,
+    "char_path": "charVocab.txt",
+    "word_path": "wordVocab.txt",
+    "bpe_path": "1B.model",
+
+    "dynamic": false,
+    "mode": "natural",
+    "train_replacement": "new_data/train_replacement.json"
+}
