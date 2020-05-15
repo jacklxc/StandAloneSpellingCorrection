@@ -16,7 +16,7 @@ The model is implemented with PaddlePaddle 1.6 DyGraph. The backbone code is fro
 To train the model, run `python -u model.py configs/standard_config.json`. Add `--test` for inference only. You can also run `tune_model.py` to evoke multiple jobs in SLURM system to train models with different configuations.
 
 ## LM Spelling Correction
-This is the model introduced in the paper. Essentially its the modification of [ERNIE 2.0 implementation](https://github.com/PaddlePaddle/ERNIE/tree/develop/ernie). Run `tune_xxx.py` to evoke multiple jobs in SLURM system and run corresponding `test_xxx.sh` for inference. The usage is the same as ERNIE 2.0.
+This is the model introduced in the paper. Essentially it's a modification of [ERNIE 2.0 implementation](https://github.com/PaddlePaddle/ERNIE/tree/develop/ernie). Run `tune_xxx.py` to evoke multiple jobs in SLURM system and run corresponding `test_xxx.sh` for inference. The usage is the same as ERNIE 2.0.
 
 ## Baseline 1: ScRNN
 ScRNN is the model proposed by [Sakaguchi et al. (2017)](https://github.com/keisks/robsut-wrod-reocginiton). This is the re-implementation using PaddlePaddle 1.6 DyGraph. Run `tune_robust_model.py` to evoke multiple jobs in SLURM system to tune learning rate and the hidden size of LSTM. You can run `python robust_model.py --test` to make inference once you have the model weights.
