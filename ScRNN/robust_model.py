@@ -518,6 +518,7 @@ if __name__ == '__main__':
     parser.add_argument("--lr", help="Learning rate")
     parser.add_argument('--hidden_size')
     parser.add_argument("--mode")
+    parser.add_argument('--test', action='store_true')
     args = parser.parse_args()
 
     if args.lr:
@@ -542,6 +543,9 @@ if __name__ == '__main__':
     with open(ModelHyperParams.train_replacement) as f:
         trainWordReplacement = json.load(f)
 
-    #train_parallel(dynamic = ModelHyperParams.dynamic, 
-    #    model_path="robust_"+str(ModelHyperParams.learning_rate)+"_"+str(ModelHyperParams.hidden_size)+"_best")
-    test("robust_0.001_650_best")
+    if args.test:
+        test("robust_0.001_650_best")
+    else:
+        train_parallel(dynamic = ModelHyperParams.dynamic, 
+            model_path="robust_"+str(ModelHyperParams.learning_rate)+"_"+str(ModelHyperParams.hidden_size)+"_best")
+        
