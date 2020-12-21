@@ -1,5 +1,5 @@
 # StandAloneSpellingCorrection
-Repository for Findings of EMNLP 2020 "Context-aware Stand-alone Neural Spelling Correction". This work is done by Xiangci Li as research scientist intern at IDL of SVAIL, Baidu USA supervised by Dr. Hairong Liu. If you have any question, please contact lixiangci8@gmail.com.
+Repository for Findings of EMNLP 2020 [Context-aware Stand-alone Neural Spelling Correction](https://www.aclweb.org/anthology/2020.findings-emnlp.37/). This work is done by Xiangci Li as research scientist intern at IDL of SVAIL, Baidu USA supervised by Dr. Hairong Liu. If you have any question, please contact lixiangci8@gmail.com.
 
 ## Requirements
 * PaddlePaddle 1.6
