@@ -26,3 +26,16 @@ ScRNN is the model proposed by [Sakaguchi et al. (2017)](https://github.com/keis
 
 ## Baseline 2: MUDE
 [MUDE](https://github.com/zw-s-github/MUDE) is the previous SOTA model for stand-alone spelling correction. It's based on PyTorch. The version here is a minimal revision of the original code so that it can take our dataset as input.
+
+
+## Citation
+Please cite [Context-aware Stand-alone Neural Spelling Correction](https://www.aclweb.org/anthology/2020.findings-emnlp.37/) as
+```
+@inproceedings{li2020context,
+  title={Context-aware Stand-alone Neural Spelling Correction},
+  author={Li, Xiangci and Liu, Hairong and Huang, Liang},
+  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: Findings},
+  pages={407--414},
+  year={2020}
+}
+```
