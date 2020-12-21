@@ -25,7 +25,7 @@ This is the model introduced in the paper. Essentially it's a modification of [E
 ScRNN is the model proposed by [Sakaguchi et al. (2017)](https://github.com/keisks/robsut-wrod-reocginiton). This is the re-implementation using PaddlePaddle 1.6 DyGraph. Run `tune_robust_model.py` to evoke multiple jobs in SLURM system to tune learning rate and the hidden size of LSTM. You can run `python robust_model.py --test` to make inference once you have the model weights.
 
 ## Baseline 2: MUDE
-[MUDE](https://github.com/zw-s-github/MUDE) is the previous SOTA model for stand-alone spelling correction. It's based on PyTorch. The version here is a minimal revision of the original code so that it can take our dataset as input.
+[MUDE](https://github.com/DSE-MSU/MUDE) is the previous SOTA model for stand-alone spelling correction. It's based on PyTorch. The version here is a minimal revision of the original code so that it can take our dataset as input.
 
 
 ## Citation
